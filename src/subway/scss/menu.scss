@@ -15,7 +15,7 @@
 .Menu {
     .inner { display: flex; width: 1400px; margin: 30px auto; justify-content: space-between; }
     .MenuForm{ width: 45%;   
-        select{ color: #000; margin-bottom: 30px; }
+        select{ color: #000; margin-bottom: 30px; padding: 5px; }
         form{ padding: 20px; border: 1px solid #009223;
             p {
                 background-color: #fff;
