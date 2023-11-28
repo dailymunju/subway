@@ -31,6 +31,10 @@ const Menu = () => {
         ...cart,
         [name] : value
       })
+     
+    }
+    const onSelect = (e) => {
+      const { value} = e.target
       setData([...data].sort((a, b) => a[value] > b[value] ? 1 : -1))
     }
 
@@ -59,7 +63,7 @@ const Menu = () => {
           <Header/>
           <h2>메뉴등록리스트</h2>
           <div className="inner">
-            <MenuForm cart={cart} textRef={textRef} isEdit={isEdit} changeInput=  {changeInput} onSubmit={onSubmit}/>
+            <MenuForm cart={cart} textRef={textRef} isEdit={isEdit} changeInput=  {changeInput} onSelect ={onSelect} onSubmit={onSubmit}/>
             <MenuList data={data} onDel={onDel} onEdit={onEdit}/>
           </div>
         </div>

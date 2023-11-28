@@ -1,9 +1,9 @@
 
-const MenuForm = ({isEdit, textRef, cart, changeInput, onSubmit }) => {
+const MenuForm = ({isEdit, textRef, cart, changeInput, onSubmit,onSelect }) => {
     const { text, menu, img, gram, kcal} = cart
     return (
         <div className="MenuForm">
-            <select onChange={changeInput}>
+            <select onChange={onSelect}>
                 <option value="">=== 정렬 ===</option>
                 <option value="text">메뉴명</option>
                 <option value="menu">Menu</option>
@@ -23,7 +23,7 @@ const MenuForm = ({isEdit, textRef, cart, changeInput, onSubmit }) => {
                 </p>
                 <p>
                     <label htmlFor="">Menu</label>
-                    <input type="text" name="menu" value={menu} onChange={changeInput} placeholder="메뉴명을 영어로 입력해주세요" pattern="[A-Za-z]+"/>
+                    <input type="text" name="menu" value={menu} onChange={changeInput} placeholder="메뉴명을 영어로 입력해주세요"/>
                 </p>
                 <p>
                     <label htmlFor="">칼로리</label>
