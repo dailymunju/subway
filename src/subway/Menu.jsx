@@ -31,7 +31,6 @@ const Menu = () => {
         ...cart,
         [name] : value
       })
-     
     }
     const onSelect = (e) => {
       const { value} = e.target
