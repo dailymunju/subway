@@ -40,7 +40,8 @@ const Menu = () => {
 
     const onSubmit = e => {
       e.preventDefault()
-      if(!cart.text && !cart.menu && !cart.kcal && !cart.gram && !cart.img ) return 
+      if(!cart.text || !cart.menu || !cart.kcal || !cart.gram || !cart.img ) return
+
       if(isEdit){
         setData(data.map(item=>item.id === cart.id ? cart : item))
         setIsEdit(false)
