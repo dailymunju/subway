@@ -23,7 +23,7 @@ const MenuForm = ({isEdit, textRef, cart, changeInput, onSubmit,onSelect }) => {
                 </p>
                 <p>
                     <label htmlFor="">Menu</label>
-                    <input type="text" name="menu" value={menu} onChange={changeInput} placeholder="메뉴명을 영어로 입력해주세요"/>
+                    <input type="text" name="menu" value={menu} onChange={changeInput} placeholder="메뉴명을 영어로 입력해주세요" pattern="[A-Za-z]+"/>
                 </p>
                 <p>
                     <label htmlFor="">칼로리</label>
