@@ -5,7 +5,9 @@ import './scss/menu.scss'
 import Header from "./Header";
 
 const Menu = () => {
-    const [data, setData] = useState([])
+    const [data, setData] = useState([
+      {text: '이탈리안비엠티', img: 'https://www.subway.co.kr/images/menu/sandwich_cl01_01.jpg',menu: '이탈리안비엠티', kcal: '340', gram: '203' }
+    ])
     const no = useRef(1)
     const textRef = useRef()
     const [cart, setCart] = useState({

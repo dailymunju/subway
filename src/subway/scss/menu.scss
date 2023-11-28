@@ -23,6 +23,7 @@
                 border-bottom: 1px solid #e5e5e5;
                 padding: 20px;
                 &:last-child { border: none;}
+                &.guide { font-size: 12px;}
                 label{
                     float: left;
                     position: relative;
